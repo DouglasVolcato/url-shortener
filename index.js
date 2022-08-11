@@ -44,7 +44,9 @@ app.post("/shorturl", async function (req, res) {
         link.save((err, data) => {
           res.json({
             original_url: data.url,
-            short_url: data.id,
+            short_url:
+              "https://douglasvolcato-url-shortener.herokuapp.com/shorturl/" +
+              data.id,
           });
         });
       }
