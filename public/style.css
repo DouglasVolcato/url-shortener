@@ -36,6 +36,7 @@ label {
 
 input {
   padding: 5px;
+  color: white;
 }
 
 input[type="text"] {
